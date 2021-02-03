@@ -115,7 +115,7 @@ class MavenVersion:
             else:
                 qualifier_type = 5
             if type(qualifier_type) is not int:
-                error(f'Invalid qualifier type in: {self._v}')
+                error(f'Invalid qualifier found in: {self._v}')
             qualifier_suffix = get_or_else(qualifier, i)
             if qualifier_suffix is not None and type(qualifier_suffix) is int:
                 i += 1
@@ -123,7 +123,7 @@ class MavenVersion:
                 qualifier_suffix = 0
 
             if i != len(qualifier):
-                error(f'Invalid qualifier in: {self._v}')
+                error(f'Invalid qualifier found in: {self._v}')
             qualifier = [qualifier_prefix, qualifier_type, qualifier_suffix]
         else:
             # 5 = ['', 'ga', 'final']
