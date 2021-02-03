@@ -9,12 +9,14 @@ setup(
     author_email='33urus@gmail.com',
     license='GPLv3+',
     classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Environment :: Console',
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Software Development :: Libraries',
     ],
     python_requires='>=3.6',
     py_modules=[
