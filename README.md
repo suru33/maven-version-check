@@ -20,3 +20,18 @@ pip install mvn-compare
 0
 
 ```
+Test shell script
+```shell
+V1="9.3-alpha10"
+V2="9.2"
+
+OP=$(mvn-compare $V1 $V2)
+echo "v1: $V1, v2: $V2"
+
+if [ $OP -le 0 ] 
+then
+  echo "upgrade not possible"
+else
+  echo "Upgraded"
+fi
+```
