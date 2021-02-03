@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='mvn-compare',
-    version='1.0',
+    version='1.0-RC1',
     description='Compare maven release versions',
     url='https://github.com/suru33/maven-version-comparator',
     author='SuRu',
