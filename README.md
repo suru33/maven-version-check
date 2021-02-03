@@ -3,7 +3,7 @@
 Compare maven release versions
 
 ```shell
-pip install git+git://github.com/suru33/maven-version-comparator.git@main
+pip install mvn-compare
 ```
 
 ### Examples
